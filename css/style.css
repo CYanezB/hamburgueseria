@@ -118,6 +118,8 @@ header nav .container .menu li :is(a:hover, .activo) {
 
 /* fin header*/
 
+/*inicio footer*/
+
 footer {
     background-color: var(--colorsecundario);
     padding: 1.25em 0em;
@@ -126,6 +128,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 100;
 }
 
 footer a {
@@ -137,10 +140,6 @@ footer a:hover {
     color: var(--colorprincipal);
 }
 
-
-
-/*inicio footer*/
-
 .flecha a {
     display: block;
     color: var(--colorprincipal);
@@ -149,6 +148,8 @@ footer a:hover {
     right: 0.25em;
     font-size: 300%;
 }
+
+/*fin footer*/
 
 /*inicio hero*/
 
@@ -346,7 +347,77 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
 
 /* final aboutus*/
 
-/* fin footer*/
+/* Inicio Our Blogs*/
+
+main section#ourblog .grid {
+    display: flex;
+    flex-direction: row;
+}
+
+main section#ourblog .grid article {
+    width: calc(50% - 2em);
+    border-bottom: 0px;
+    margin: 1em;
+
+}
+
+main section#ourblog .container .grid article.blog {
+    border: 0em;
+}
+
+.cajafecha {
+    max-width: 10%;
+    height: auto;
+    background-color: rgba(250, 87, 58, 0.8);
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    padding: 0.8em;
+    margin: 0 auto;
+    color: white;
+    font-weight: 700;
+    font-family: var(--fuenteprincipal);
+}
+
+
+article.blog figure {
+    position: relative;
+    width: 100%;
+}
+
+article.blog h3 {
+    font-size: 1.2em;
+    font-weight: 450;
+    text-transform: capitalize;
+}
+
+article.blog h4 {
+    font-weight: 700;
+    color: var(--colorprincipal);
+    padding-bottom: 0.8em;
+    font-size: 0.8em;
+}
+
+article.blog p {
+    margin-bottom: 1em;
+}
+
+article.blog div.margen {
+    margin: 0 0 0 1em;
+}
+
+article.blog div.margen a>i {
+    border: 0em;
+    margin: 0em;
+    padding: 0em 0.5em;
+    font-size: 1em;
+}
+
+article.blog div.margen a {
+    font-size: 0.9em;
+}
+
+/* Fin Our Blogs*/
 
 /* mediasqueries*/
 
@@ -392,6 +463,13 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
 
     main section .flex {
         margin-top: 2.5em;
+    }
+
+    main section#ourblog .grid article {
+        width: calc(33.333% - 2em);
+        border-bottom: 0px;
+        margin: 1em;
+
     }
 
 }
