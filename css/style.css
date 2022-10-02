@@ -419,6 +419,88 @@ article.blog div.margen a {
 
 /* Fin Our Blogs*/
 
+/* Inicio Menu */
+
+main.menu {
+    height: 100%;
+}
+
+main.menu section#todaysmenu h2 {
+    color: white;
+}
+
+main.menu section#todaysmenu {
+    margin: 0em 3em;
+}
+
+main.menu section#todaysmenu nav ul a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--fuenteprincipal);
+    font-size: small;
+    display: inline-block;
+    padding: 0.5em;
+    padding-left: 1em;
+    border-radius: 5px;
+    width: 100%;
+}
+
+main.menu section#todaysmenu nav {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+main.menu section#todaysmenu div.offers h3 {
+    color: white;
+    font-weight: 700;
+}
+
+main.menu section#todaysmenu div.offers .underline {
+    height: 0.1em;
+    width: 4em;
+    background-color: var(--colorprincipal);
+    margin: 0.5em 0em;
+}
+
+main.menu section#todaysmenu nav ul a:hover {
+    background-color: var(--colorprincipal);
+    transition: 0.5s;
+}
+
+main.menu section#todaysmenu div.offers p {
+    color: lightgray;
+    font-size: 0.8em;
+}
+
+section#todaysmenu div.container div.grid article.blog {
+    margin-left: 1em;
+    border: 0px;
+}
+
+section#todaysmenu div.container div.grid article.blog div.margen h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+section#todaysmenu div.container div.grid article.blog div.margen {
+    margin-left: 0em;
+}
+
+section#todaysmenu div.container div.grid article.blog div.margen h3 span {
+    color: var(--colorprincipal);
+    padding-left: 1em;
+    font-weight: bold;
+}
+
+section#todaysmenu div.container div.grid article.blog div.margen p {
+    color: lightgray;
+}
+
+
+
+/* Fin Menu */
+
 /* mediasqueries*/
 
 @media(min-width: 37.5em) {
@@ -436,6 +518,9 @@ article.blog div.margen a {
         width: 100%;
     }
 
+    main section#todaysmenu div.container div.grid article {
+        width: 100%;
+    }
 }
 
 @media(min-width: 48em) {
@@ -494,5 +579,47 @@ article.blog div.margen a {
 
     header nav .container .menu li {
         display: inline-block;
+    }
+
+    main.menu section#todaysmenu nav {
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+
+    main.menu section#todaysmenu div.offers {
+        padding-top: 10em;
+    }
+
+    div.gridmenu {
+        display: flex;
+    }
+
+    div.izq {
+        flex-direction: column;
+        width: 30%;
+    }
+
+    div.gridmenu div.grid {
+        flex-direction: column;
+        height: 33.333%;
+
+    }
+
+    div.gridmenu div.grid figure {
+        width: 20%;
+    }
+
+    section#todaysmenu article.blog {
+        display: flex;
+    }
+
+    section#todaysmenu article.blog div.margen {
+        padding-left: 1.5em;
+    }
+
+    section#todaysmenu div.container div.grid article.blog:first-child {
+        margin-left: 1em;
+        border: 0px;
+        padding-top: 1.2em;
     }
 }
