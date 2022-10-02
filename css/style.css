@@ -477,6 +477,10 @@ section#todaysmenu div.container div.grid article.blog {
     border: 0px;
 }
 
+section#todaysmenu div.container div.grid article.blog:last-child {
+    margin-bottom: 2em;
+}
+
 section#todaysmenu div.container div.grid article.blog div.margen h3 {
     color: white;
     font-weight: 700;
@@ -485,6 +489,7 @@ section#todaysmenu div.container div.grid article.blog div.margen h3 {
 
 section#todaysmenu div.container div.grid article.blog div.margen {
     margin-left: 0em;
+    margin-top: 1em;
 }
 
 section#todaysmenu div.container div.grid article.blog div.margen h3 span {
